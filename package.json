@@ -1,0 +1,46 @@
+{
+  "name": "neetverse",
+  "version": "1.0.0",
+  "description": "NEETVerse - Dual Exam (NEET + JEE) Student Ecosystem with XP Economy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "serve": "python3 -m http.server 8000",
+    "build": "echo 'Frontend is static HTML/CSS/JS'",
+    "test": "echo 'Add tests later'",
+    "migrate:db": "psql -f schema.sql"
+  },
+  "keywords": [
+    "NEET",
+    "JEE",
+    "education",
+    "exam",
+    "study",
+    "XP",
+    "gamification",
+    "marketplace",
+    "community"
+  ],
+  "author": "NEETVerse Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "supabase": "^2.0.0",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.4.0",
+    "express-ratelimit": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
